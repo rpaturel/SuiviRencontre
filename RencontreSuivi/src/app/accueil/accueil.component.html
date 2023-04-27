@@ -1,9 +1,15 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <!-- Navbar content -->
+    <a class="navbar-brand" href="non">Accueil</a>
+    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Se déconnecter</button>
+  </nav>
 <h1>Suivi des rencontres avec les commerciaux</h1>
+<br>
 <div class="container">
     <div id="global" class="row">
-        <div id="formulaire" class="col-4 row align-items-center">
+        <div id="formulaire" class="col-4 row">
             <form action="/my-handling-form-page" method="post">
-                <h3>Commercial à ajouter :</h3>
+                <h2>Commercial à ajouter :</h2>
                 <div class="form-group" style="margin-top: 50px; margin-bottom: 50px;">
                 <label>Date :&nbsp;</label>
                 <input class="form-control" type="date" value="" id="date" required>
@@ -26,24 +32,26 @@
                 </div>
 
                 <div class="text-center">
-                <input type="submit" value="Envoyer le formulaire">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Envoyer le formulaire">
                 </div>
             </form>
         </div>
         <div class="col-8">
             <div class="row">
-                <div id="divChart" class="offset-1 col-10 w-100 p-3">
-                    <h3>Histogramme d'évolution des rencontres :</h3>
+                <div id="divChart" class="offset-1 col-10 w-100">
+                    <h2>Histogramme d'évolution des rencontres :</h2>
                     <br>
                     <canvas id="Courbe"></canvas>
                 </div>
             </div>
             <br>
             <div class="row">
-                <div id="Historique" class="offset-1 col-10  w-100 p-3">
+                <div id="Historique" class="offset-1 col-10  w-100">
+                    <br>
+                    <br>
                     <hr>
-                    <h3>Historique des rencontres :</h3>
-                    <div class="table-wrapper-scroll-y my-custom-scrollbar" style="height: 100px; overflow: auto;">
+                    <h2>Historique des rencontres :</h2>
+                    <div class="table-wrapper-scroll-y my-custom-scrollbar" style="height: 110px; overflow: auto;">
                     <table class="table table-striped">
                         <thead>
                             <tr>

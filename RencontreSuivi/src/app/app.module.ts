@@ -18,7 +18,8 @@ import { IdentificationComponent } from './identification/identification.compone
 
     RouterModule.forRoot([
       {path: 'oui', component: AccueilComponent},
-      {path: '', component: AppComponent}
+      {path: '', component: AppComponent},
+      {path: 'non', component: IdentificationComponent}
     ]),
      NgbModule
   ],
