@@ -3,8 +3,7 @@
     <h1 style="margin-left: 3%;">Suivi des rencontres avec les commerciaux</h1>
     <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" >Se déconnecter</button> <!-- pouvoir editer le profil -->
   </nav>
-<br>
-<div class="container">
+<div id="container" class="container">
     <div id="global" class="row">
         <div id="formulaire" class="col-4 row">
             <form action="/my-handling-form-page" method="post">
@@ -38,15 +37,11 @@
             <div class="row">
                 <div id="divChart" class="offset-1 col-10 w-100">
                     <h2>Histogramme d'évolution des rencontres :</h2>
-                    <br>
                     <canvas id="Courbe"></canvas>
                 </div>
             </div>
-            <br>
-            <div class="row">
+            <div id="histo" class="row">
                 <div id="Historique" class="offset-1 col-10  w-100">
-                    <br>
-                    <br>
                     <hr>
                     <h2>Historique des rencontres :</h2>
                     <div class="table-wrapper-scroll-y my-custom-scrollbar" style="height: 110px; overflow: auto;">
