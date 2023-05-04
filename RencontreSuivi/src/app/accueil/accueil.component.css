@@ -3,3 +3,10 @@
     width: 400px;
     height: 400px;
 }
+
+#sonic{
+    background: url("../../assets/img/sonic-sonic-the-hedgehog.gif");
+    width: 50px;
+    height: 50px;
+    margin-left: 3%;
+}
