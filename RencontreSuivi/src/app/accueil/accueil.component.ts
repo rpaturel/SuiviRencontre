@@ -12,14 +12,28 @@ Chart.register(...registerables);
 })
 export class AccueilComponent {
   title = 'Accueil';
-  
+
+  listeCommerciaux : Array<Array<string>> = [];
 
   ngOnInit(): void {
 
-    (async function() {
-      var liste = await getData();
-      console.log("liste : "+liste);
+    var listeCommerciaux = this.listeCommerciaux;
 
+    (async function() {
+      var listeBDD = await getData();
+      console.log("liste : "+listeBDD); 
+
+      for(let i=0; i < listeBDD.length ; i++){
+        var agentCommercial : Array<string> = [];
+        agentCommercial.push(listeBDD[i].firstname);
+        //console.log(listeBDD[i].firstname)
+        agentCommercial.push(listeBDD[i].lastname);
+        //console.log(listeBDD[i].lastname)
+        listeCommerciaux.push(agentCommercial);
+        console.log("Agent Commercial : "+agentCommercial)
+      }
+
+      console.log("listeCommerciaux : "+listeCommerciaux)
 
       const data = [
         { year: 2010, count: 5 },
@@ -46,5 +60,3 @@ export class AccueilComponent {
     })();
   }
 }
-
-
