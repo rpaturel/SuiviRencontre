@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { Chart, registerables} from 'chart.js';
 
-declare function getData() : any;
+declare var getData : any;
 
 Chart.register(...registerables);
 @Component({
@@ -18,7 +18,7 @@ export class AccueilComponent {
 
     (async function() {
       var liste = await getData();
-      console.log(liste);
+      console.log("liste : "+liste);
 
 
       const data = [
